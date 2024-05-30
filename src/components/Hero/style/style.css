@@ -1,0 +1,191 @@
+ .hero {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100%  ;
+    width: 100%;
+}
+/* .hero .hero1 .content {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+} */
+.hero .hero1 .content h2 {
+    color: orange;
+    font-size: 30px;
+    position: absolute;
+    top: 190px;
+    left: 20px;
+} 
+ .hero .hero1 .content p {
+    width:50%;
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 240px;
+    left: 20px;
+}
+.hero .hero1 .content span {
+    font-weight: 600;
+}
+.hero .image-game {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    right: 0;  
+    bottom: -20px;  
+}
+.hero .image-game .img1 {
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+    bottom:90px;
+    width: 19%;
+} 
+.hero .image-game .img2 {
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    width: 12%;
+} 
+.hero .image-game .img3 {
+    position: absolute;
+    right: 135px;
+    z-index: 3;
+    bottom :200px;
+    width: 18%;
+} 
+.hero .image-game a{
+    position: absolute;
+    bottom: 265px;
+    right:  330px;
+    text-decoration: none;
+    color: orange;
+    font-size: 25px;
+}
+.hero2  {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(./../../../assets/image/fotter.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+}
+.hero2 .icons {
+    display: flex;
+} 
+.hero2 .icons .icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    margin: 2px;
+}
+.hero2 .scroll {
+    padding-top: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+}
+.hero2 .scroll i {
+    color: white;
+    font-size: 20px;
+}
+.hero2 .scroll p {
+    color: white;
+}
+.hero2 .copy p {
+    color: white;
+}
+.hero2 .hero2-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.hero .hero1 .image-game2 {
+    display: none;
+}
+@media (max-width:992px){
+    .hero1 {
+       /* flex-wrap: wrap; */
+       flex-direction: column;
+       justify-content:center;
+       align-items: center;
+       text-align: center;
+       padding: 0px 15px;
+       height:calc(100% - 200px) ;
+    }
+    .hero .hero1 .image-game {
+        display: none;
+    }
+    .hero .hero1 .content {
+         position: relative;   
+         bottom: -100px;
+    }
+    .hero .hero1 .image-game2 {
+        display: block;
+        position: relative;
+        bottom: -100px;
+    }
+    .hero .hero1 .content p  {
+        font-size: 13px;
+        text-align: center;
+    }
+    .hero .hero1 .content h2  {
+        font-size: 23px;
+        width: 90%;
+    }
+    .hero2 {
+        text-align: center;
+        padding: 5px;
+    }
+    .hero .hero1 .content p {
+        width: 90%;
+        position: relative;
+        top: 0;
+    }
+    .hero .hero1 .content h2 {
+        position: relative;
+        top: -10px;
+    }
+
+}
+@media (max-width:576px) {
+    .hero .hero1 .content {
+        bottom: -35px;
+   }
+   .hero .hero1 .image-game2 {
+    bottom: -35px;
+}
+.hero .hero1 .content h2 {
+    top: 0;
+    margin-bottom: 10px;
+}
+.hero1 {
+    height:calc(100% - 100px) ;
+}
+
+} 
+@media (max-width:450px) {
+    .hero2 {
+        background-image: url(./../../../assets/image/footer-mobile.png);
+    }
+}
